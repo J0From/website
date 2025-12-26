@@ -156,16 +156,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Submit Button */}
-                <Button
-                  type="submit"
-                  onClick={handleSubmit}
-                  disabled={!isFormValid() || isSubmitting}
-                  className={`w-full h-11 sm:h-12 transition-all duration-200 ${
-                    isFormValid() && !isSubmitting
-                      ? "bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white"
-                      : "bg-slate-300 text-slate-500 cursor-not-allowed"
-                  }`}
-                >
+                <Button type="submit" variant="gradient" size="form" disabled={!isFormValid() || isSubmitting}>
                   {isSubmitting ? (
                     "Sending..."
                   ) : submitSuccess ? (
@@ -187,7 +178,7 @@ export default function ContactPage() {
             <Card className="shadow-lg flex-1">
               <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-center">
                 <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">Contact Information</h2>
-                <div className="space-y-4 sm:space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                   {/* Email */}
                   <div className="flex items-start gap-3 sm:gap-4">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center flex-shrink-0">
