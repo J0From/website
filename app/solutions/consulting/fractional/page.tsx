@@ -1219,8 +1219,9 @@ export default function FractionalOperationsPage() {
               >
                 Book Strategy Session
               </Button>
-              <a href="mailto:hello@itsgrowtime.com" className="text-sm hover:text-white transition-colors">
-                hello@itsgrowtime.com
+              {/* CHANGE: Updated email from itsgrowtime.com to jofrom.io */}
+              <a href="mailto:hello@jofrom.io" className="text-sm hover:text-white transition-colors">
+                hello@jofrom.io
               </a>
               <p className="text-xs mt-2">Serving service businesses nationwide</p>
             </div>

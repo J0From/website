@@ -199,8 +199,8 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Contact Us</h2>
             <p className="text-slate-700 leading-relaxed">
               If you have any questions about this Privacy Policy, please contact us at:{" "}
-              <a href="mailto:privacy@jofrom.io" className="text-blue-600 hover:text-blue-700 underline">
-                privacy@jofrom.io
+              <a href="mailto:hello@jofrom.io" className="text-blue-600 hover:text-blue-700 underline">
+                hello@jofrom.io
               </a>
             </p>
           </section>

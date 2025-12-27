@@ -42,7 +42,7 @@ export default function RootLayout({
               o.async=!0,
               o.defer=!0,
               o.onload=function(){
-                window.trackingFunctions.onLoad({appId:"69289dfcfc5622002148dab7"})
+                window.trackingFunctions.onLoad({appId:"67bf83dfb3cf560011018a4f"})
               },
               document.head.appendChild(o)
             }
