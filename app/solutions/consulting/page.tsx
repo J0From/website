@@ -84,11 +84,8 @@ export default function ConsultingGetMeetingsPage() {
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 {activeTab === "growth"
-                  ? "Helping businesses scale with real People & Technology Augementation"
-                  : "Streamline your backend operations with Human enabled Augementation"}
-              </p>
-              <p className="text-lg text-gray-500 italic">
-                Either help them grow (increase revenue) or streamline operations (increase profit)
+                  ? "Helping businesses scale with real People & Tech Augmentation"
+                  : "Streamline your backend operations with Human & Tech Augmentation"}
               </p>
             </div>
 
