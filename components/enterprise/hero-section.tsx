@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export function EnterpriseHeroSection() {
   return (
@@ -28,12 +29,12 @@ export function EnterpriseHeroSection() {
             </Button>
 
             <Button
-              onClick={() => window.open("https://calendly.com/myj0/30min", "_blank")}
+              asChild
               size="lg"
               variant="outline"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-6 h-auto"
             >
-              Download Whitepaper
+              <Link href="/enterprise/whitepaper">Download Whitepaper</Link>
             </Button>
           </div>
         </div>

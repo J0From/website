@@ -24,6 +24,29 @@ interface FractionalFormData {
   ready: boolean
 }
 
+interface WhitepaperFormData {
+  firstName: string
+  lastName: string
+  email: string
+  title: string
+  company: string
+  industry: string
+  employeeCount: string
+  phone: string
+}
+
+interface GrowthFormData {
+  name: string
+  email: string
+  company: string
+  phone: string
+  industry: string
+  revenue: string
+  interest: string
+  challenge: string
+  ready: boolean
+}
+
 export async function sendContactFormEmail(formData: ContactFormData) {
   try {
     if (!resend) {
@@ -170,6 +193,170 @@ export async function sendFractionalFormEmail(formData: FractionalFormData) {
                 </div>
                 
                 ${formData.ready ? '<div class="field"><span class="badge">✓ Ready to get back to doing what they love</span></div>' : ""}
+              </div>
+            </div>
+          </body>
+        </html>
+      `,
+    })
+
+    if (error) {
+      console.error("[v0] Resend error:", error)
+      return { success: false, message: error.message }
+    }
+
+    return { success: true, data }
+  } catch (error) {
+    console.error("[v0] Error sending email:", error)
+    return { success: false, message: "Failed to send email" }
+  }
+}
+
+export async function sendWhitepaperLeadEmail(formData: WhitepaperFormData) {
+  try {
+    if (!resend) {
+      console.log("[v0] Mock email send (no API key configured):", formData)
+      return {
+        success: true,
+        data: { id: "mock-email-id" },
+        message: "Email simulated successfully (no API key configured)",
+      }
+    }
+
+    const { data, error } = await resend.emails.send({
+      from: "Jo from Enterprise <onboarding@resend.dev>",
+      to: ["jeremy@jofrom.io"],
+      replyTo: formData.email,
+      subject: `Whitepaper Download - ${formData.company}`,
+      html: `
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+              .content { background: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; }
+              .field { margin-bottom: 20px; }
+              .label { font-weight: bold; color: #475569; margin-bottom: 5px; }
+              .value { color: #1e293b; }
+              .highlight { background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #3b82f6; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h2 style="margin: 0;">New Whitepaper Download Lead</h2>
+                <p style="margin: 10px 0 0 0; opacity: 0.9;">Enterprise Compliance Whitepaper</p>
+              </div>
+              <div class="content">
+                <div class="field">
+                  <div class="label">Contact Information</div>
+                  <div class="highlight">
+                    <strong>${formData.firstName} ${formData.lastName}</strong><br>
+                    ${formData.title}<br>
+                    <a href="mailto:${formData.email}">${formData.email}</a>
+                    ${formData.phone ? `<br><a href="tel:${formData.phone}">${formData.phone}</a>` : ""}
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Company Details</div>
+                  <div class="value">
+                    <strong>Company:</strong> ${formData.company}<br>
+                    <strong>Industry:</strong> ${formData.industry}<br>
+                    <strong>Employee Count:</strong> ${formData.employeeCount}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </body>
+        </html>
+      `,
+    })
+
+    if (error) {
+      console.error("[v0] Resend error:", error)
+      return { success: false, message: error.message }
+    }
+
+    return { success: true, data }
+  } catch (error) {
+    console.error("[v0] Error sending email:", error)
+    return { success: false, message: "Failed to send email" }
+  }
+}
+
+export async function sendGrowthFormEmail(formData: GrowthFormData) {
+  try {
+    if (!resend) {
+      console.log("[v0] Mock email send (no API key configured):", formData)
+      return {
+        success: true,
+        data: { id: "mock-email-id" },
+        message: "Email simulated successfully (no API key configured)",
+      }
+    }
+
+    const { data, error } = await resend.emails.send({
+      from: "Jo from Growth Consulting <onboarding@resend.dev>",
+      to: ["jeremy@jofrom.io"],
+      replyTo: formData.email,
+      subject: `Growth Consulting Inquiry - ${formData.company}`,
+      html: `
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%); color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+              .content { background: #f8fafc; padding: 30px; border-radius: 0 0 8px 8px; }
+              .field { margin-bottom: 20px; }
+              .label { font-weight: bold; color: #475569; margin-bottom: 5px; }
+              .value { color: #1e293b; }
+              .highlight { background: white; padding: 15px; border-radius: 6px; border-left: 4px solid #3b82f6; }
+              .badge { display: inline-block; background: #10b981; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h2 style="margin: 0;">New Growth Consulting Inquiry</h2>
+                <p style="margin: 10px 0 0 0; opacity: 0.9;">Sales Pipeline Development</p>
+              </div>
+              <div class="content">
+                <div class="field">
+                  <div class="label">Contact Information</div>
+                  <div class="highlight">
+                    <strong>${formData.name}</strong><br>
+                    <a href="mailto:${formData.email}">${formData.email}</a><br>
+                    <a href="tel:${formData.phone}">${formData.phone}</a>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Company Details</div>
+                  <div class="value">
+                    <strong>Company:</strong> ${formData.company}<br>
+                    <strong>Industry:</strong> ${formData.industry}<br>
+                    <strong>Annual Revenue:</strong> ${formData.revenue}
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Service Interest</div>
+                  <div class="highlight">
+                    ${formData.interest}
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="label">Biggest Growth Challenge</div>
+                  <div class="value">${formData.challenge}</div>
+                </div>
+                
+                ${formData.ready ? '<div class="field"><span class="badge">✓ Ready to build predictable pipeline</span></div>' : ""}
               </div>
             </div>
           </body>

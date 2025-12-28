@@ -101,7 +101,7 @@ export function RegulatedIndustriesSection() {
             asChild
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-lg px-8 h-12"
           >
-            <Link href="/solutions/smb/purchase">
+            <Link href="/enterprise/whitepaper">
               Download Compliance Whitepaper
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>

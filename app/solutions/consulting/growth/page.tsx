@@ -38,6 +38,8 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
+import { sendGrowthFormEmail } from "@/app/actions/email"
+
 export default function GrowthPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null)
@@ -86,16 +88,16 @@ export default function GrowthPage() {
     setIsSubmitting(true)
 
     try {
-      console.log("[v0] Form submitted:", formData)
+      const result = await sendGrowthFormEmail(formData)
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      // Show success state
-      setIsSubmitted(true)
+      if (result.success) {
+        setIsSubmitted(true)
+      } else {
+        alert("There was an error submitting your inquiry. Please try again or contact hello@jofrom.io")
+      }
     } catch (error) {
       console.error("[v0] Form submission error:", error)
-      alert("Something went wrong. Please try again.")
+      alert("There was an error submitting your inquiry. Please try again or contact hello@jofrom.io")
     } finally {
       setIsSubmitting(false)
     }
