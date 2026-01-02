@@ -7,7 +7,7 @@ A comprehensive design kit for building the Jo From application and login pages 
 ## Brand Identity
 
 ### Brand Name
-**Jo From** - Connecting departments with AI-powered solutions
+**Jo From** - Machine staffing firm.
 
 ### Tagline
 "Human + Machine collaboration for modern businesses"

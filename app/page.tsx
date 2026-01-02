@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Search, Lightbulb, Rocket } from "lucide-react"
 import { Footer } from "@/components/footer"
@@ -13,6 +13,7 @@ import { Logo } from "@/components/logo"
 export default function HomePage() {
   const [currentRole, setCurrentRole] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const roles = ROLES
 
@@ -28,6 +29,17 @@ export default function HomePage() {
 
     return () => clearInterval(interval)
   }, [roles.length])
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+      const handleLoadedMetadata = () => {
+        video.currentTime = video.duration / 2
+      }
+      video.addEventListener("loadedmetadata", handleLoadedMetadata)
+      return () => video.removeEventListener("loadedmetadata", handleLoadedMetadata)
+    }
+  }, [])
 
   const getDepartmentSizeClasses = () => {
     return "text-6xl md:text-8xl"
@@ -91,7 +103,7 @@ export default function HomePage() {
       <section className="w-full pt-8">
         <div className="relative w-full">
           <div className="relative w-full max-h-[600px] overflow-hidden border-y-4 border-slate-300 shadow-lg">
-            <video className="w-full h-full object-cover opacity-60" autoPlay loop muted playsInline>
+            <video ref={videoRef} className="w-full h-full object-cover opacity-60" autoPlay loop muted playsInline>
               <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Herro%20Video-4KoLgBEgSZSrzfzocWhpAxa4boP0as.mov" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
