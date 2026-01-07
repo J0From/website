@@ -110,7 +110,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-purple-300/10 pointer-events-none"></div>
             {/* Overlaid Try Jo Button - Made Smaller */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <Link href="https://demo.jofrom.io/" target="_blank" rel="noopener noreferrer">
+              <Link href="https://demo.jofrom.io/">
                 <Button className="h-10 md:h-12 px-6 md:px-8 text-base md:text-lg bg-slate-900 hover:bg-slate-800 text-white shadow-2xl">
                   Try Jo
                 </Button>
@@ -312,9 +312,9 @@ export default function HomePage() {
       </section>
 
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
-      <section className={`py-12 sm:py-16 md:py-20 lg:py-24 bg-black pl-[-6rem] pr-102`}>
-        <div className="text-right">
-          <div className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl text-white leading-tight space-y-1">
+      <section className={`py-12 sm:py-16 md:py-20 lg:py-24 bg-black overflow-x-auto`}>
+        <div className="text-right px-6 md:px-12 lg:px-24 min-w-max">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight space-y-1">
             <div>
               Jo fixes{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
