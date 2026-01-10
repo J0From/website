@@ -260,7 +260,7 @@ export function MethodologyPageClient() {
                 </ul>
                 <div className="mt-6 pt-4 border-t border-blue-200">
                   <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    NEVER autonomous
+                    Logic
                   </span>
                 </div>
               </CardContent>
@@ -289,7 +289,7 @@ export function MethodologyPageClient() {
                 </ul>
                 <div className="mt-6 pt-4 border-t border-purple-200">
                   <span className="inline-block bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    NEVER autonomous
+                    Logic
                   </span>
                 </div>
               </CardContent>
@@ -368,7 +368,7 @@ export function MethodologyPageClient() {
                   </div>
                 </div>
                 <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">
-                  NEVER autonomous
+                  Logic
                 </span>
                 <p className="text-sm text-gray-600">Operating boundaries, scale, constraints</p>
               </CardContent>
@@ -390,7 +390,7 @@ export function MethodologyPageClient() {
                   </div>
                 </div>
                 <span className="inline-block bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2">
-                  NEVER autonomous
+                  Logic
                 </span>
                 <p className="text-sm text-gray-600">Authority, function, breadth/depth</p>
               </CardContent>
