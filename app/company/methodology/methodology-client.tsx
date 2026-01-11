@@ -112,7 +112,7 @@ export function MethodologyPageClient() {
       title: "Role",
       subtitle: "Outcomes to deliver",
       description:
-        "Establishes outcome ownership, accountability boundaries, human requirements, and non-transferable duties.",
+        "Establishes ownership, accountability boundaries, human requirements, and non-transferable duties.",
       badge: "STAYS HUMAN",
       badgeColor: "bg-gradient-to-r from-blue-600 to-purple-600",
       borderColor: "border-blue-600",
