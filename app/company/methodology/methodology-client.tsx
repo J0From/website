@@ -6,10 +6,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import {
   ArrowRight,
-  Check,
   Shield,
   Users,
-  Cog,
   BarChart3,
   Lock,
   FileCheck,
@@ -18,7 +16,6 @@ import {
   Zap,
   Search,
   Rocket,
-  Sparkles,
 } from "lucide-react"
 import Link from "next/link"
 import { Footer } from "@/components/footer"
@@ -437,329 +434,6 @@ export function MethodologyPageClient() {
         </div>
       </div>
 
-      {/* Autonomy-Risk Problem */}
-      <section className="py-16 sm:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">The Autonomy-Risk Problem</h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Why traditional approaches to intelligent systems fail in regulated environments
-          </p>
-
-          {/* The Paradox - Two cards side by side */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
-                  <Zap className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">More Autonomy = More Risk</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Give Jo freedom to adapt and it can make unpredictable mistakes in environments where mistakes mean
-                  fines, safety issues, and lawsuits.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
-                  <Lock className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">More Control = Less Flexibility</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Lock down every decision and you lose the benefits of intelligent automation—defeating the entire
-                  purpose of deployment.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* The Governance Dilemma */}
-          <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">The Governance Dilemma</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
-                  1
-                </div>
-                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
-                  <Cog className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Tools</h3>
-                <p className="text-gray-600 leading-relaxed">Predictable, you own them, no autonomy</p>
-              </CardContent>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
-                  2
-                </div>
-                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Employees</h3>
-                <p className="text-gray-600 leading-relaxed">Autonomous, you supervise them, accountable</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 border-blue-600 hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
-                  ?
-                </div>
-                <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
-                  <Sparkles className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Jo (Machine Staff)</h3>
-                <p className="text-gray-700 leading-relaxed font-medium">Somewhere in between — THIS is the problem</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* How Labor Map Solves This */}
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardContent className="p-6 sm:p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">How Labor Map Solves This</h3>
-              <p className="text-lg text-gray-600 text-center mb-8 max-w-2xl mx-auto">
-                Labor Map's Safety Architecture ensures ownership stays with humans while execution can be delegated
-              </p>
-
-              <div className="space-y-3 max-w-2xl mx-auto mb-8">
-                <div className="flex items-center justify-center gap-4 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
-                    1
-                  </div>
-                  <div className="text-center">
-                    <span className="font-bold text-gray-900">Organization</span>
-                    <span className="text-gray-600 mx-2">—</span>
-                    <span className="text-gray-600">Hard constraints</span>
-                  </div>
-                  <span className="px-3 py-1 bg-slate-900 text-white text-sm font-medium rounded-full">Logic</span>
-                </div>
-
-                <div className="flex items-center justify-center gap-4 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
-                    2
-                  </div>
-                  <div className="text-center">
-                    <span className="font-bold text-gray-900">Strata</span>
-                    <span className="text-gray-600 mx-2">—</span>
-                    <span className="text-gray-600">Structure</span>
-                  </div>
-                  <span className="px-3 py-1 bg-slate-900 text-white text-sm font-medium rounded-full">Logic</span>
-                </div>
-
-                <div className="flex items-center justify-center gap-4 p-4 bg-gray-50 rounded-lg">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
-                    3
-                  </div>
-                  <div className="text-center">
-                    <span className="font-bold text-gray-900">Role</span>
-                    <span className="text-gray-600 mx-2">—</span>
-                    <span className="text-gray-600">Accountability</span>
-                  </div>
-                  <span className="px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-full">
-                    STAYS HUMAN
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-center gap-4 p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-blue-600">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
-                    4
-                  </div>
-                  <div className="text-center">
-                    <span className="font-bold text-gray-900">Task</span>
-                    <span className="text-gray-600 mx-2">—</span>
-                    <span className="text-gray-600">Execution</span>
-                  </div>
-                  <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
-                    Jo can help HERE
-                  </span>
-                </div>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg">
-                <p className="text-xl font-bold text-gray-900">"Execution can move; ownership does not."</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Gradient Divider */}
-      <div className="py-8 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 shadow-lg"></div>
-        </div>
-      </div>
-
-      {/* Graduated Autonomy Framework */}
-      <section className="py-16 sm:py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            Graduated Autonomy Framework
-          </h2>
-          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Match Jo's autonomy to risk level — calibrated freedom, not blanket access
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
-            {/* Critical Risk */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Lock className="h-7 w-7 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Critical Risk</span>
-                    <h3 className="text-xl font-bold text-gray-900">Strict Logic</h3>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">Regulatory compliance, safety, legal liability</p>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-700">
-                    <strong>Jo role:</strong> Observer only — LOG and ALERT humans
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* High Risk */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="h-7 w-7 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">High Risk</span>
-                    <h3 className="text-xl font-bold text-gray-900">10-20% Autonomous</h3>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">Quality control, approvals, financial decisions</p>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-700">
-                    <strong>Jo role:</strong> Recommend — human reviews and approves
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Medium Risk */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <BarChart3 className="h-7 w-7 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Medium Risk</span>
-                    <h3 className="text-xl font-bold text-gray-900">50-70% Autonomous</h3>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">Data processing, reporting, routine operations</p>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-700">
-                    <strong>Jo role:</strong> Execute — human spot-checks and monitors
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Low Risk */}
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 sm:p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="h-7 w-7 text-white" />
-                  </div>
-                  <div>
-                    <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Low Risk</span>
-                    <h3 className="text-xl font-bold text-gray-900">90% Autonomous</h3>
-                  </div>
-                </div>
-                <p className="text-gray-600 mb-4">Scheduling, notifications, data logging</p>
-                <div className="p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-700">
-                    <strong>Jo role:</strong> Handle it — human reviews logs periodically
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Real Example */}
-          <Card className="hover:shadow-lg transition-shadow">
-            <CardContent className="p-6 sm:p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Real Example: Food Processing Plant</h3>
-              <p className="text-gray-600 text-center mb-8">
-                Mission: "Ensure product safety and quality for Batch #1247"
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                      <Lock className="w-4 h-4 text-white" />
-                    </div>
-                    Zero Autonomy
-                  </h4>
-                  <p className="text-sm text-gray-700">
-                    Final batch approval (FDA), allergen declaration (liability), and safety override (OSHA) remain with
-                    humans.
-                  </p>
-                </div>
-
-                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                      <Shield className="w-4 h-4 text-white" />
-                    </div>
-                    Low Autonomy
-                  </h4>
-                  <p className="text-sm text-gray-700">
-                    Jo analyzes quality data and gathers deviation information, but humans approve and decide.
-                  </p>
-                </div>
-
-                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                      <BarChart3 className="w-4 h-4 text-white" />
-                    </div>
-                    Medium Autonomy
-                  </h4>
-                  <p className="text-sm text-gray-700">
-                    Jo adjusts temperature within range and orders inventory when below threshold.
-                  </p>
-                </div>
-
-                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
-                  <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                      <Check className="w-4 h-4 text-white" />
-                    </div>
-                    High Autonomy
-                  </h4>
-                  <p className="text-sm text-gray-700">
-                    Jo handles data logging completely and creates reports for periodic human review.
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Gradient Divider */}
-      <div className="py-8 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 shadow-lg"></div>
-        </div>
-      </div>
-
       {/* System Outputs / Deliverables */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -784,6 +458,13 @@ export function MethodologyPageClient() {
           </div>
         </div>
       </section>
+
+      {/* Gradient Divider */}
+      <div className="py-8 bg-gradient-to-r from-blue-50 via-purple-50 to-blue-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="h-0.5 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 shadow-lg"></div>
+        </div>
+      </div>
 
       {/* CTA Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-r from-blue-600 to-purple-600">
