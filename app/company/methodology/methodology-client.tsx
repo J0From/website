@@ -288,7 +288,7 @@ export function MethodologyPageClient() {
         </div>
       </div>
 
-      {/* Our Framework Section - BEFORE 8-Phase */}
+      {/* Our Framework Section - BEFORE Decompisition*/}
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">Our Framework</h2>
