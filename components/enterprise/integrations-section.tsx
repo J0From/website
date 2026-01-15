@@ -5,7 +5,6 @@ export function IntegrationsSection() {
   const industries = [
     {
       name: "Food & Beverage",
-      emoji: "🍏",
       description: "Traceability, recipe management, and food safety (HACCP)",
       integrations: [
         {
@@ -30,7 +29,6 @@ export function IntegrationsSection() {
     },
     {
       name: "Healthcare & Life Sciences",
-      emoji: "🏥",
       description: "Interoperability and patient data security (HIPAA/GDPR)",
       integrations: [
         {
@@ -55,7 +53,6 @@ export function IntegrationsSection() {
     },
     {
       name: "Energy & Utilities",
-      emoji: "⚡",
       description: "Asset performance, grid management, and sustainability reporting",
       integrations: [
         {
@@ -97,12 +94,9 @@ export function IntegrationsSection() {
           {industries.map((industry) => (
             <div key={industry.name} className="space-y-6">
               {/* Industry Header */}
-              <div className="flex items-start gap-4">
-                <span className="text-4xl">{industry.emoji}</span>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">{industry.name}</h3>
-                  <p className="text-gray-600">{industry.description}</p>
-                </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-1">{industry.name}</h3>
+                <p className="text-gray-600">{industry.description}</p>
               </div>
 
               {/* Integration Cards */}
