@@ -64,7 +64,7 @@ export default function StrategyDocumentPage() {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
       {/* Left Side - Dashboard Preview Image */}
-      <div className="lg:w-1/2 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+      <div className="lg:w-1/2 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 relative overflow-hidden">
         {/* Logo */}
         <div className="absolute top-6 left-6 z-10">
           <Link href="/" className="text-xl sm:text-2xl font-bold text-white flex items-center">
@@ -90,9 +90,8 @@ export default function StrategyDocumentPage() {
               Strategy Resource
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-              GTM Strategy
               <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Working Session
+                Strategy Session
               </span>
             </h1>
             <p className="text-slate-300 text-lg mb-8">
@@ -135,13 +134,13 @@ export default function StrategyDocumentPage() {
         <div className="w-full max-w-md">
           {/* Back Link */}
           <Link 
-            href="/solutions/consulting" 
+            href="https://get.jofrom.io/solutions/smb/purchase" 
             className="inline-flex items-center text-slate-600 hover:text-slate-900 text-sm mb-8 transition-colors"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Back to Consulting
+            Get Jo
           </Link>
 
           <Card className="shadow-xl border-0">
