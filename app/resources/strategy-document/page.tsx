@@ -64,7 +64,7 @@ export default function StrategyDocumentPage() {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
       {/* Left Side - Dashboard Preview Image */}
-      <div className="lg:w-1/2 bg-gradient-to-br from-blue-900 via-purple-900 to-slate-900 relative overflow-hidden">
+      <div className="lg:w-1/2 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 relative overflow-hidden">
         {/* Logo */}
         <div className="absolute top-6 left-6 z-10">
           <Link href="/" className="text-xl sm:text-2xl font-bold text-white flex items-center">
