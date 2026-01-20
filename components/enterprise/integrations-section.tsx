@@ -34,7 +34,7 @@ export function IntegrationsSection() {
           <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-4 text-balance">Built for Your Stack</h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {integrations.map((integration) => {
             const CardWrapper = integration.url ? 'a' : 'div'
             const cardProps = integration.url ? { href: integration.url, target: "_blank", rel: "noopener noreferrer" } : {}
@@ -42,27 +42,27 @@ export function IntegrationsSection() {
             return (
               <CardWrapper key={integration.name} {...cardProps} className={integration.url ? "block" : ""}>
                 <Card
-                  className="border-2 hover:shadow-lg transition-all hover:border-blue-200 relative group h-full"
+                  className="border-2 hover:shadow-xl transition-all hover:border-blue-300 relative group h-full bg-white"
                 >
-                  <CardContent className="p-6 flex flex-col items-center text-center">
+                  <CardContent className="p-8 flex flex-col items-center text-center">
                     {integration.popular && (
                       <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-xs px-3 py-1 whitespace-nowrap">
                         MOST POPULAR
                       </Badge>
                     )}
-                    <div className="w-16 h-16 mb-4 relative rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                    <div className="w-24 h-24 mb-6 relative rounded-xl overflow-hidden bg-slate-50 flex items-center justify-center p-4 group-hover:bg-slate-100 transition-colors">
                       <Image
-                        src={integration.logo || `/.jpg?key=ohhmj&height=64&width=64&query=${encodeURIComponent(integration.name + " logo")}`}
+                        src={integration.logo || `/.jpg?key=ohhmj&height=96&width=96&query=${encodeURIComponent(integration.name + " logo")}`}
                         alt={`${integration.name} logo`}
-                        width={64}
-                        height={64}
+                        width={96}
+                        height={96}
                         className="object-contain"
                       />
                     </div>
-                    <h4 className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-blue-600 transition-colors">
+                    <h4 className="font-semibold text-gray-900 text-base leading-tight group-hover:text-blue-600 transition-colors mb-2">
                       {integration.name}
                     </h4>
-                    <p className="text-xs text-gray-500 mt-1">{integration.industry}</p>
+                    <p className="text-sm text-gray-500">{integration.industry}</p>
                   </CardContent>
                 </Card>
               </CardWrapper>
