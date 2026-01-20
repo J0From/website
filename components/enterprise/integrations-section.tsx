@@ -50,7 +50,7 @@ export function IntegrationsSection() {
                         MOST POPULAR
                       </Badge>
                     )}
-                    <div className="w-48 h-32 mb-6 relative rounded-lg bg-white flex items-center justify-center p-4 group-hover:shadow-md transition-all border-2 border-slate-200">
+                    <div className="w-48 h-32 mb-6 relative rounded-lg bg-slate-800 flex items-center justify-center p-4 group-hover:bg-slate-700 transition-all border-2 border-slate-700">
                       <Image
                         src={integration.logo || `/.jpg?key=ohhmj&height=128&width=192&query=${encodeURIComponent(integration.name + " logo")}`}
                         alt={`${integration.name} logo`}
