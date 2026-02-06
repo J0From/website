@@ -5,21 +5,15 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Calendar, ArrowRight, Instagram, Linkedin, Twitter } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import { useMemo } from "react"
 import { useSearchParams } from "next/navigation"
 import { Footer } from "@/components/footer"
 
 export default function SuccessPage() {
-  const [companyName, setCompanyName] = useState("")
   const searchParams = useSearchParams()
 
-  useEffect(() => {
-    // Get company name from URL params or localStorage
-    const company = searchParams.get("company") || localStorage.getItem("jo-company-name") || "Your Company"
-    setCompanyName(company)
-
-    // Note: Calendly link is now opened from the contact-info page immediately after loading completes
-    // This removes the duplicate opening and potential glitch
+  const companyName = useMemo(() => {
+    return searchParams.get("company") || (typeof window !== "undefined" ? localStorage.getItem("jo-company-name") : null) || "Your Company"
   }, [searchParams])
 
   return (

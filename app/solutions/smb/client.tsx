@@ -392,7 +392,7 @@ export default function SMBPageClient() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 auto-rows-fr">
-            {departmentFeatures.map((department, index) => (
+            {departmentFeatures.map((department) => (
               <Card
                 key={department.name}
                 className="p-4 sm:p-6 hover:shadow-lg transition-shadow border-2 hover:border-blue-200 flex flex-col h-full"

@@ -41,10 +41,6 @@ export function HomePageClient() {
     }
   }, [])
 
-  const getDepartmentSizeClasses = () => {
-    return "text-6xl md:text-8xl"
-  }
-
   const getUnderlineLength = (department: string) => {
     const baseLength = department.length
 

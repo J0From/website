@@ -174,11 +174,6 @@ export default function AgentSelectionPage() {
     router.push("/business-type")
   }
 
-  const handleContinue = () => {
-    console.log("Selected agents:", selectedAgents)
-    // Navigate to next step
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
