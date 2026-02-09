@@ -21,7 +21,7 @@ import {
   Fuel,
   Server,
   CircuitBoard,
-  Activity as ActivityIcon,
+  Activity,
   Thermometer,
   Hammer,
   Gauge,
@@ -40,7 +40,7 @@ const jobCategories = [
     subtitle: "Sector 01",
     description:
       "Deploy skilled engineers and technical specialists for infrastructure, software systems, and advanced technology projects.",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
+    image: "/images/hire-engineering.jpg",
     icon: Cpu,
     roles: [
       "Systems Engineers",
@@ -59,7 +59,7 @@ const jobCategories = [
     subtitle: "Sector 02",
     description:
       "Certified healthcare professionals for hospitals, clinics, and field medical operations across all specialties.",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
+    image: "/images/hire-healthcare.jpg",
     icon: Stethoscope,
     roles: [
       "Travel Nurses",
@@ -78,7 +78,7 @@ const jobCategories = [
     subtitle: "Sector 03",
     description:
       "Experienced production operators and manufacturing specialists for high-output, compliance-driven environments.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    image: "/images/hire-production.jpg",
     icon: Factory,
     roles: [
       "Production Supervisors",
@@ -97,7 +97,7 @@ const jobCategories = [
     subtitle: "Sector 04",
     description:
       "Certified field workers for energy infrastructure, utilities, and large-scale field deployment projects.",
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
+    image: "/images/hire-energy.jpg",
     icon: Zap,
     roles: [
       "Lineworkers",
@@ -170,7 +170,7 @@ const industries = [
   { icon: Wrench, label: "Maintenance" },
   { icon: HardHat, label: "Construction" },
   { icon: CircuitBoard, label: "Electronics" },
-  { icon: ActivityIcon, label: "Clinical" },
+  { icon: Activity, label: "Clinical" },
   { icon: Fuel, label: "Oil & Gas" },
   { icon: Server, label: "Data Centers" },
   { icon: Thermometer, label: "HVAC" },
@@ -223,8 +223,8 @@ export function HirePageClient() {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80"
-            alt="Industrial workers collaborating on site"
+            src="/images/hire-hero.jpg"
+            alt="Workers in the field"
             fill
             className="object-cover"
             priority
@@ -554,7 +554,7 @@ export function HirePageClient() {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 text-balance">
             Deploy Your Workforce{" "}
-            <span className="bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-cyan-300 to-pink-300 bg-clip-text text-transparent">
               Today
             </span>
           </h2>
