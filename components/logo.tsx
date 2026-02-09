@@ -37,6 +37,8 @@ export function Logo({ size, width, height, className, withGradient = true }: Lo
           width={!useResponsive ? pixelWidth : undefined}
           height={!useResponsive ? pixelHeight : undefined}
           className={cn("object-contain", withGradient ? "brightness-0" : "")}
+          loading="eager"
+          priority
         />
         {withGradient && (
           <div
