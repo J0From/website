@@ -80,11 +80,11 @@ export function generateStructuredData(meta: AIMeta, url: string) {
     "@type": meta.entity === "SoftwareAgent" ? "SoftwareApplication" : meta.entity,
     name: meta.name,
     description: meta.description,
-    url: `https://get.jofrom.io${url}`,
+    url: `https://www.jofrom.io${url}`,
     provider: {
       "@type": "Organization",
       name: "Jo",
-      url: "https://get.jofrom.io",
+      url: "https://www.jofrom.io",
     },
   }
 

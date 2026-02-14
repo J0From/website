@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 export async function GET() {
   const aiMap = {
     company: "Jo",
-    domain: "get.jofrom.io",
+    domain: "www.jofrom.io",
     tagline: "Human + Machine workforce orchestration for regulated industries",
     description:
       "Jo fixes labor bottlenecks in highly regulated industries—so you stay compliant, cut costs, and finally have enough hands to get the work done.",
