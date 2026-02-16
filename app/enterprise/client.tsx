@@ -170,8 +170,8 @@ export default function EnterpriseClientPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/85 to-indigo-900/90" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center max-w-4xl px-6">
-            <h3 className="text-4xl md:text-6xl font-bold text-white mb-4 text-balance">Food & Agriculture</h3>
-            <p className="text-lg md:text-xl text-blue-100 font-light">FDA • HACCP • FSMA Certified</p>
+            <h3 className="text-4xl md:text-6xl font-bold text-white mb-4 text-balance">Manufacturing</h3>
+            <p className="text-lg md:text-xl text-blue-100 font-light">ISO 9001 • OSHA • Six Sigma</p>
           </div>
         </div>
       </div>

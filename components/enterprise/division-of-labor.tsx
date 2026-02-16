@@ -10,8 +10,8 @@ export function DivisionOfLaborSection() {
             A Smarter Division of Labor
           </h2>
           <p className="text-lg text-gray-600 mb-8 text-pretty">
-            The future of work isn&apos;t about replacing people—it&apos;s about optimizing the collaboration between{" "}
-            <span className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Human + Machine</span>
+            The future of work isn&apos;t about replacing people—it&apos;s about optimizing the collaboration between
+            <span className="block mt-16 text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Human + Machine</span>
           </p>
         </div>
 
@@ -48,7 +48,7 @@ export function DivisionOfLaborSection() {
               <div className="h-14 w-14 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-6 shadow-md">
                 <Zap className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Jo Performs</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Jo from</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
