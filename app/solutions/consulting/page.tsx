@@ -27,7 +27,7 @@ export default function ConsultingGetMeetingsPage() {
     <div className="min-h-screen bg-white flex flex-col">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-4 sm:p-6 max-w-6xl mx-auto w-full">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
+        <Link href="/jo" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
           <span className="md:hidden">Jo from</span>
           <span className="hidden md:inline">J</span>
           <div className="relative mx-1">

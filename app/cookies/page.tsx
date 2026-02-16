@@ -16,10 +16,10 @@ export default function CookiesPage() {
       <nav className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center">
+            <Link href="/jo" className="flex items-center">
               <Logo size="lg" />
             </Link>
-            <Link href="/">
+            <Link href="/jo">
               <Button variant="ghost">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home

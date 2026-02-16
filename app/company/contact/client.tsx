@@ -70,13 +70,13 @@ export default function ContactClientPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-4 sm:p-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-1">
+        <Link href="/jo" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-1">
           <span className="md:hidden">Jo from</span>
           <span className="hidden md:inline">J</span>
           <Image src="/qubit.png" alt="Qubit" width={20} height={20} />
         </Link>
         <Button variant="ghost" className="gap-2" asChild>
-          <Link href="/">
+          <Link href="/jo">
             <ArrowLeft className="w-4 h-4" />
             <span className="hidden sm:inline">Back</span>
           </Link>

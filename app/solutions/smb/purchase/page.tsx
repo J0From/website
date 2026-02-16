@@ -78,7 +78,7 @@ export default function PurchasePage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-4 sm:p-6 max-w-6xl mx-auto">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
+        <Link href="/jo" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
           J
           <div className="relative mx-1 w-4 h-4 sm:w-5 sm:h-5">
             <Image src="/qubit.png" alt="Qubit" fill sizes="20px" className="brightness-0 object-contain" />

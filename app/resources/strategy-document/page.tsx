@@ -67,7 +67,7 @@ export default function StrategyDocumentPage() {
       <div className="lg:w-1/2 bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 relative overflow-hidden">
         {/* Logo */}
         <div className="absolute top-6 left-6 z-10">
-          <Link href="/" className="text-xl sm:text-2xl font-bold text-white flex items-center">
+          <Link href="/jo" className="text-xl sm:text-2xl font-bold text-white flex items-center">
             J
             <div className="relative mx-1 w-4 h-4 sm:w-5 sm:h-5">
               <Image src="/qubit.png" alt="Qubit" fill sizes="20px" className="brightness-0 invert object-contain" />

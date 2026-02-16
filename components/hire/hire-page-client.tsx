@@ -192,7 +192,7 @@ export function HirePageClient() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 flex justify-between items-center py-4 sm:py-6 px-6 md:px-12 lg:px-24 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/50">
         <div className="flex items-center">
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/jo" className="flex items-center gap-2 group">
             <ArrowLeft
               size={18}
               className="text-slate-600 group-hover:-translate-x-1 transition-transform"

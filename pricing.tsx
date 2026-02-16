@@ -11,7 +11,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
-        <Link href="/" className="text-2xl font-bold text-slate-900 flex items-center">
+        <Link href="/jo" className="text-2xl font-bold text-slate-900 flex items-center">
           J
           <div className="relative mx-1">
             <Image src="/qubit.png" alt="Qubit" width={20} height={20} className="brightness-0" />
@@ -30,7 +30,7 @@ export default function PricingPage() {
             ></div>
           </div>
         </Link>
-        <Link href="/">
+        <Link href="/jo">
           <Button variant="ghost" className="gap-2">
             <ArrowLeft className="w-4 h-4" />
             Back

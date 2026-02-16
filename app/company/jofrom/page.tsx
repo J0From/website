@@ -89,7 +89,7 @@ export default function JoFromPage() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-4 sm:p-6 max-w-6xl mx-auto">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
+        <Link href="/jo" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
           <span className="md:hidden">Jo from</span>
           <span className="hidden md:inline">J</span>
           <div className="relative mx-1">
@@ -109,7 +109,7 @@ export default function JoFromPage() {
             ></div>
           </div>
         </Link>
-        <Link href="/">
+        <Link href="/jo">
           <Button variant="ghost" className="gap-1 sm:gap-2 text-sm sm:text-base px-2 sm:px-4">
             <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4" />
             Back

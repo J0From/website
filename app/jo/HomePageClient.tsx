@@ -77,7 +77,7 @@ export function HomePageClient() {
       {/* Navigation */}
       <nav className="sticky top-0 z-50 flex justify-between items-center py-4 sm:py-6 px-6 md:px-12 lg:px-24 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/50">
         <div className="flex items-center">
-          <Link href="/" className="text-xl sm:text-2xl md:text-3xl">
+          <Link href="/jo" className="text-xl sm:text-2xl md:text-3xl">
             <Logo size="md" />
           </Link>
         </div>

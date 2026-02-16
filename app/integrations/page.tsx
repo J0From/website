@@ -50,7 +50,7 @@ export default function IntegrationsPage() {
 
   const handleBackConfirm = () => {
     setShowBackWarning(false)
-    router.push("/")
+    router.push("/jo")
   }
 
   const handlePreviousStep = () => {
@@ -61,7 +61,7 @@ export default function IntegrationsPage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-7xl mx-auto">
-        <Link href="/" className="text-2xl">
+        <Link href="/jo" className="text-2xl">
           <Logo size="md" />
         </Link>
         <Button variant="ghost" className="gap-2" onClick={handleBackClick}>

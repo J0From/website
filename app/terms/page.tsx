@@ -16,13 +16,13 @@ export default function TermsPage() {
       <nav className="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
+            <Link href="/jo" className="flex items-center gap-2">
               <Image src="/qubit.png" alt="Jo Logo" width={32} height={32} className="w-8 h-8" />
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Jo
               </span>
             </Link>
-            <Link href="/">
+            <Link href="/jo">
               <Button variant="ghost">
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Home

@@ -48,11 +48,11 @@ export function AboutPageClient() {
       {/* Navigation */}
       <nav className="border-b border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/jo" className="flex items-center gap-2">
             <Image src="/qubit.png" alt="Jo Logo" width={32} height={32} className="w-8 h-8" />
             <span className="text-xl font-bold text-gray-900">Jo</span>
           </Link>
-          <Link href="/">
+          <Link href="/jo">
             <Button variant="ghost" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               Back to Home
@@ -290,7 +290,7 @@ export function AboutPageClient() {
                 Explore Enterprise Solutions
               </Button>
             </Link>
-            <Link href="/">
+            <Link href="/jo">
               <Button variant="outline" className="w-full sm:w-auto bg-white text-blue-600 hover:bg-gray-100">
                 Get Started Today
               </Button>
